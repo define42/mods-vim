@@ -2,7 +2,7 @@ version: 2
 jobs:
   publish-latest:
     environment:
-      IMAGE_NAME: define42/linuxserver-mod-demo
+      IMAGE_NAME: define42/mods-vim
     docker:
       - image: circleci/buildpack-deps:stretch
     steps:
