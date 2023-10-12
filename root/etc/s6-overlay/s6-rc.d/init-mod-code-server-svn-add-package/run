@@ -1,8 +1,8 @@
 #!/usr/bin/with-contenv bash
 
-if ! dpkg -s subversion >/dev/null 2>&1; then
-    echo "**** Adding subversion to package install list ****"
-    echo "subversion" >> /mod-repo-packages-to-install.list
+if ! dpkg -s vim >/dev/null 2>&1; then
+    echo "**** Adding vim to package install list ****"
+    echo "vim" >> /mod-repo-packages-to-install.list
 else
-    echo "**** subversion already installed, skipping ****"
+    echo "**** vim already installed, skipping ****"
 fi
