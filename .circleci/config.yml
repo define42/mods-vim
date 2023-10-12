@@ -26,4 +26,4 @@ workflows:
       - publish-latest:
           filters:
             branches:
-              only: master
+              only: main
