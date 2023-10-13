@@ -3,6 +3,8 @@
 if ! dpkg -s vim >/dev/null 2>&1; then
     echo "**** Adding vim to package install list ****"
     echo "vim" >> /mod-repo-packages-to-install.list
+    echo "build-essential" >> /mod-repo-packages-to-install.list
+    echo "wget" >> /mod-repo-packages-to-install.list
 else
     echo "**** vim already installed, skipping ****"
 fi
