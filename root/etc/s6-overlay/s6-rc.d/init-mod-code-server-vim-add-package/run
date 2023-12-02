@@ -8,8 +8,11 @@ if ! dpkg -s vim >/dev/null 2>&1; then
     echo "iputils-ping" >> /mod-repo-packages-to-install.list
     echo "nmap" >> /mod-repo-packages-to-install.list
     echo "telnet" >> /mod-repo-packages-to-install.list
+    echo "abc:10000:65536" >> /etc/subuid
+    echo "abc:10000:65536" >> /etc/subgid
     echo "podman" >> /mod-repo-packages-to-install.list
-    echo "abc:100000:65536" >> /etc/subuid
+    echo "uidmap" >> /mod-repo-packages-to-install.list
+    echo "slirp4netns" >> /mod-repo-packages-to-install.list
 else
     echo "**** vim already installed, skipping ****"
 fi
