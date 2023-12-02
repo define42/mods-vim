@@ -13,6 +13,7 @@ if ! dpkg -s vim >/dev/null 2>&1; then
     echo "podman" >> /mod-repo-packages-to-install.list
     echo "uidmap" >> /mod-repo-packages-to-install.list
     echo "slirp4netns" >> /mod-repo-packages-to-install.list
+    echo "fuse-overlayfs" >> /mod-repo-packages-to-install.list
 else
     echo "**** vim already installed, skipping ****"
 fi
