@@ -9,6 +9,7 @@ if ! dpkg -s vim >/dev/null 2>&1; then
     echo "nmap" >> /mod-repo-packages-to-install.list
     echo "telnet" >> /mod-repo-packages-to-install.list
     echo "podman" >> /mod-repo-packages-to-install.list
+    echo "abc:1000:1000" >> /etc/subuid
 else
     echo "**** vim already installed, skipping ****"
 fi
